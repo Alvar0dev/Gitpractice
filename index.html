@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi primera web</title>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera web</title>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!--Tablas-->
+    <table style="width: 500px;">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio </th>
+                <th>Descuento</th>
+        </thead>
+    
+        <tr>
+            <td>Libro de mierda</td>
+            <td>$200</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td>Libro de mierda</td>
+            <td>$3412340</td>
+            <td>53%</td>
+        </tr>
+    </table>
+
+    <!--Lista no ordenada-->
+
+    <ul>
+        <li>primero</li>
+        <li>segundo</li>
+        <li>tercero</li>
+    </ul>
+    <!--Lista ordenada-->  
+    <ol>
+        <li value="3">primero</li>
+        <li style = "list-style-type: lower-alpha">segundo </li>
+        <li style = "list-style-type: lower-roman">segundo </li>  
+        <li>tercero</li>
+        <li>cuarto</li> 
+            <ol>
+                <li>primero</li>
+                <li>segundo</li>
+            </ol>
+        
+    </ol>
+
+    <h1>Contenido de nuestra web</h1>
+    <h2>mi segundo heading </h2>
+    <h3>mi tercer heading</h3>
+    <h4>mi cuarto heading</h4>
+    <h5>mi quinto heading</h5>
+    <h6>chanchito feliz</h6>
+    <p>parrafo de prueba</p>    
+    <p>otro parrafo</p>
+    <h2>mi segundo heading pero le vamos a meter un span
+        <br><!--br es un salto de linea-->
+    <span style="color:red"> esto es un span </></span></h2>
+    <!--esto es un comentario-->
+
+    <!--etiqueta de hipervinculo y el target especifica donde se abrira, en este,
+    caso se abre en una nueva pestaña-->
+
+    <!-- la etiqueta de apertura de a contiene el target y el href (url)-->
+
+    <a target="_blanck" href="https://www.google.com">  ir a google   </a>
+    <a target ="_blank" Href="https://www.youtube.com">ir a youtube</a>
+
+    <img src="images\1710959421713.jpg" width="200px"/> <!--ancho de la imagen-->
+    <form action="/formulario" method=GET> <!--GET o POST (la forma segura seria con certificados de encriptado)-->
+        <!-- dentro de la etiqueta de form hay que especificar que se va a hacer
+        con estos datos del formulario y a donde se enviaran "action" y "method"-->
+        <label for="nombre">Nombre</label> 
+        <input type="text" id= "nombre" placeholder="Ingrese su nombre"/>
+<br>
+        <label for="apellido">Apellido</label>
+        <input type ="text" id= "apellido" placeholder="Ingrese su apellido"/>
+<br>
+        <label for="comentario">Comentario</label>
+        <textarea cols ="30" rows="5" id="comentario" placeholder="Escriba su comentario" name="comentario"></textarea>
+<br>
+        <button type="button">Enviar</button>
+        <input type="submit" value="enviar"/>
+<br>
+        <button type="button"><img src ="images\1710959421713.jpg" width="40px"/></button>
+    </form>
+</body>
+</html>
